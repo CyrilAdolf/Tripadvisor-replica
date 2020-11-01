@@ -1,0 +1,374 @@
+/* COMMON RULES */
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Trip Sans Reg";
+}
+h1 {
+  font-size: 54px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Trip Sans Med";
+}
+
+footer {
+  padding-bottom: 100px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black 2px solid;
+}
+header .logo {
+  height: 42px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+header > div {
+  display: flex;
+}
+
+header > div > div {
+  height: 50px;
+  margin: 5px 10px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 42px;
+  margin-left: 0;
+  /* padding-left: 0; */
+}
+
+header .button {
+  border: white 1px solid;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+header .button:hover {
+  border: black 1px solid;
+}
+
+header .connect {
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 0 20px;
+  font-family: "Trip Sans Med", Arial, Helvetica, sans-serif;
+  height: 40px;
+  margin: auto 0;
+  outline: none;
+  border: none;
+}
+
+header i {
+  margin-right: 15px;
+}
+
+/* MAIN   */
+main {
+  padding: 50px 0;
+}
+main > h1 {
+  font-family: "Trip Sans Med";
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+main h1 span {
+  color: #ff5d5d;
+}
+
+main menu {
+  display: flex;
+}
+
+main menu .button {
+  border: solid black 1px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+main menu :not(:last-child) {
+  margin-right: 15px;
+}
+
+/* MAIN PICTURES */
+.picture {
+  height: 430px;
+  display: flex;
+  margin-top: 25px;
+}
+
+.picture .col1 {
+  height: 100%;
+  flex: 2;
+  margin-right: 2px;
+  position: relative;
+}
+.picture .col2 {
+  height: 100%;
+  width: 430px;
+  /* flex: 1; */
+}
+.picture .col1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px;
+  /* border: white 1.5px solid; */
+}
+
+.picture .col2 img {
+  height: calc(50% - 1.5px);
+  width: 100%;
+  object-fit: cover;
+  /* display: flex;
+  border: white 1.5px solid; */
+}
+
+.float {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+.picture .col2 :nth-child(1) {
+  border-radius: 0 30px 0 0;
+}
+.picture .col2 :nth-child(2) {
+  border-radius: 0 0 30px 0;
+}
+
+/* SECTION CARTE */
+.carte {
+  /* height: 250px; */
+  /* background-color: teal; */
+  margin-top: 20px;
+  display: flex;
+}
+.carte > .col1 {
+  flex: 1;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.carte > .col2 {
+  padding: 0px;
+  flex: 1;
+  height: 300px;
+  background-color: #ff5d5d;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.carte > .col2 > div:first-child {
+  height: 50%;
+  padding: 20px;
+}
+
+.carte .col2 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0 0 10px 10px;
+}
+/* COUPURE SECTION */
+
+.cut {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cut span {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px;
+}
+.cut div {
+  border-top: black solid 2px;
+  flex: 1;
+}
+
+/* CONSEIL VOYAGES */
+
+.conseils {
+  display: flex;
+  margin-top: 50px;
+  /* justify-content: space-evenly; */
+}
+
+.conseils i {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.conseils > div {
+  border: lightgray solid 2px;
+  height: 55px;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.conseils > div:last-child {
+  margin-right: 0px;
+}
+
+/* Section CAROUSSELLE */
+
+.secCarrouselle {
+  display: flex;
+  height: 190px;
+  margin-top: 60px;
+}
+.secCarrouselle > div {
+  display: flex;
+}
+
+.carrouselle {
+  display: flex;
+  overflow: hidden;
+  flex: 3;
+  overflow-x: scroll;
+}
+.item {
+  height: 100%;
+  width: 280px;
+  background-color: purple;
+  flex-shrink: 0;
+  margin: 10px;
+  position: relative;
+}
+.secCarrouselle > :nth-child(1) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.carrouselle img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.float2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  font-size: 20px;
+}
+
+.float2 :hover {
+  color: pink;
+  font-size: 50px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* MODAL */
+
+.disable {
+  overflow: hidden;
+}
+
+.modal {
+  /* PLACED AT FOREFRONT AND OVERLAYED THE WHOLE PAGE */
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.75);
+  /* NEEDED TO FIX THE MODAL POSITION */
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+/* FORM AREA POSITION INTO THE MODAL */
+.form-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORM AREA */
+.form-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  border: #ff5d5d 2px solid;
+  background-color: white;
+}
+
+.modal p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* FORM AREA WHITHOUT TITLE */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 75%;
+  margin: 10px 0;
+  outline: none;
+  border: black 2px solid;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Trip Sans Med";
+}
+
+input[type="submit"] {
+  color: black;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ff5d5d;
+}

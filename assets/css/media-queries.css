@@ -1,0 +1,152 @@
+/* MEDIA QUERIES */
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1328px) {
+  .container {
+    width: 96.4%;
+    margin: 0 24px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  /* WRAPP MODE FOR MAIN MENU 2 ROWS */
+  main menu :not(:last-child) {
+    margin-right: 0px;
+  }
+  main > menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main menu .hidden,
+  main > menu .button {
+    border: solid black 1px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 15px;
+    flex: calc(25% - 10px);
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  main menu > :nth-child(1),
+  main menu > :nth-child(2),
+  main menu > :nth-child(3),
+  main menu > :nth-child(5),
+  main menu > :nth-child(6),
+  main menu > :nth-child(7) {
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  /* SECTION ARTE */
+  .carte {
+    margin-top: 50px;
+    display: inherit;
+  }
+  .carte .col2 {
+    text-align: center;
+  }
+
+  .carte .col2 div:first-child {
+    margin-top: 20px;
+  }
+
+  .carte .col2 div:first-child h2 {
+    margin-bottom: 20px;
+  }
+
+  /* CONSEIL VOYAGES */
+  .conseils {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .conseils > div {
+    display: flex;
+    box-sizing: border-box;
+    flex: calc(50% - 10px);
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 35px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  header > div > div > span {
+    display: none;
+  }
+  header > div > div {
+    display: flex;
+    justify-content: center;
+    /* NOT CENTERED YET */
+  }
+
+  /* MAIN PICTURES */
+
+  .picture {
+    height: 290px;
+  }
+  .picture .col1 {
+    height: 280px;
+  }
+  .picture .col2 {
+    height: 280px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+  header .logo {
+    height: 25px;
+  }
+  header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header > div:last-child {
+    display: none;
+  }
+  header .hidden {
+    display: inherit;
+  }
+  /* MAIN  */
+  main > h1 {
+    font-size: 2em;
+  }
+
+  /* WRAPP MODE FOR MAIN MENU 2 ROWS */
+
+  main menu .hidden,
+  main > menu .button {
+    border: solid black 1px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 15px;
+    flex: 1;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  main menu > :nth-child(1),
+  main menu > :nth-child(4),
+  main menu > :nth-child(3),
+  main menu > :nth-child(5),
+  main menu > :nth-child(6),
+  main menu > :nth-child(7) {
+    display: none;
+  }
+
+  /* MAIN PICTURES */
+
+  .picture .col1 img {
+    height: 280px;
+    border-radius: 30px;
+  }
+  .picture .col2 {
+    display: none;
+  }
+}
